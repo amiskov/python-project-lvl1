@@ -1,12 +1,12 @@
 import prompt
 from typing import Callable
+from brain_games.games.game_types import Game
 
 ATTEMPTS = 3
 
 
 def run(rules: str,
-        generate_question: Callable,
-        get_correct_answer: Callable,
+        create_game: Callable[[], Game],
         name: str) -> None:
     print(rules)
 
@@ -14,13 +14,12 @@ def run(rules: str,
         if attempts == 0:
             return print(f"Congratulations, {name}!")
 
-        question = generate_question()
+        question, correct_answer = create_game()
         print(f"Question: {question}")
 
         answer = prompt.string("Your answer: ")
-        correct_answer = get_correct_answer(question)
 
-        if answer == str(correct_answer):
+        if answer == correct_answer:
             print("Correct!")
             return game(attempts - 1)
         else:

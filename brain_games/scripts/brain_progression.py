@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 from brain_games.cli import welcome_user
 from brain_games.gameplay import run
-from brain_games.games.even import rules, create_game
+from brain_games.games.progression import rules, create_game
 
 
 def main():
