@@ -8,3 +8,6 @@
 
 ## Brain Calc Demo
 [![asciicast](https://asciinema.org/a/5goyrEOzFyw6jhkTbvOYhLYWq.svg)](https://asciinema.org/a/5goyrEOzFyw6jhkTbvOYhLYWq)
+
+## Brain GCD Demo
+[![asciicast](https://asciinema.org/a/RT8U1sZj9IYFDKqblEk2K6T0E.svg)](https://asciinema.org/a/RT8U1sZj9IYFDKqblEk2K6T0E)
